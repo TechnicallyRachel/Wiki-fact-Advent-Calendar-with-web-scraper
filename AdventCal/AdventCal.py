@@ -1,12 +1,5 @@
-#from bs4 import BeautifulSoup
-#import re
-#import urllib2
-#import time
-#import date
-#import wikiAdvent
 
-
-#def advent_cal(self, x, y)
+#This is the run-program file that calls to other files for webscraping in corrolation with the date entered.
 
 print "This is an advent Christmas calender."
 print "You will recieve a wikipedia fact about each day until CHRISTMAS!!:"
@@ -14,7 +7,7 @@ a = int(input("Please enter the numeric month: "))
 b = int(input("Please enter the numeric day of the month: "))
 
 if a < 12:
-    print "So much time before Christmas!"
+    print "Not much time before Christmas!"
 elif b > 25:
     print "Wasn't Christmas the best this year?"
 elif b == 1:
@@ -69,21 +62,7 @@ elif b == 25:
     import dec_25
 
 
-
-
-
-
-
-
-
-
-
-
-#elif b == 
-
-#I need to make a list range[1,25]
-#I need to make corrosponding 
-
-
-
-
+#I need to make a list range[1,25] (?)
+#I need to make corrosponding % to list to file commands, 
+# so I dont have to type out every file name and date.
+# need to go back and look how to do it.
