@@ -1,0 +1,15 @@
+#This scrapes the text for the top selling toy on Amazon
+
+from bs4 import BeautifulSoup
+import requests
+from urllib2 import urlopen
+
+url1 = 'https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_mw_tab_t_bs'
+ 
+page1 = urlopen(url1)
+
+soup1 = BeautifulSoup(page1, 'lxml')
+
+x = soup1.find('span', attrs={'class', 'zg_rankNumber'}).parent.parent
+
+print x.get_text()
