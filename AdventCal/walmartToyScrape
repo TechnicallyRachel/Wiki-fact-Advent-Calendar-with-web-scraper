@@ -1,0 +1,17 @@
+#This scraped the top selling toy on walmart.com
+
+from bs4 import BeautifulSoup
+import requests
+from urllib2 import urlopen
+
+
+#Walmart webscraper for best selling toy 
+url1 = 'https://www.walmart.com/tp/bestseller-toys'
+ 
+page1 = urlopen(url1)
+
+soup1 = BeautifulSoup(page1, 'lxml')
+
+x = soup1.find('div', attrs={'class', 'search-result-gridview-item'})
+
+print x.get_text()
